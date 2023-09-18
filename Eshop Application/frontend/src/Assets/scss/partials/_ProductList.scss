@@ -1,0 +1,63 @@
+
+.masonry { 
+    margin: 1.5em 0;
+    padding: 0;
+    margin-bottom: 0;
+    grid-gap: .5em;
+
+}
+ 
+.child { /* Masonry bricks or child elements */
+    background: #fff; 
+    margin: 0 0 .5em;
+    width: 100%;
+    box-sizing: border-box;
+    -webkit-column-break-inside: avoid;
+          page-break-inside: avoid;
+               break-inside: avoid;
+}
+
+
+.card .card-image img {
+    width: 70%;
+    margin-left: 3rem;
+    padding-top: 2rem;
+}
+
+@media only screen and (min-width: 700px) {
+    .masonry {
+        column-count: 2;
+    }
+}
+
+@media only screen and (min-width: 900px) {
+    .masonry {
+        column-count: 3;
+    }
+}
+
+
+.card {
+   -webkit-animation: flip 1s;
+  animation: flip 1s;
+}
+
+
+
+@-webkit-keyframes flip {
+  from {
+    transform: rotateY(90deg)
+  }
+  to {
+    transform: rotateY(0deg)
+  }
+}
+@keyframes flip {
+  from {
+    transform: rotateY(90deg)
+  }
+  to {
+    transform: rotateY(0deg)
+  }
+}
+

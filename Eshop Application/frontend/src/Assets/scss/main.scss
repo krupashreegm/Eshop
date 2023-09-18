@@ -1,0 +1,98 @@
+$body-font:'Open Sans', sans-serif;
+$body-fontSize: 1.5rem;
+
+body {
+    height:100%;
+    background-color: #fcfcfc;
+    font-family: $body-font;
+    font-size: $body-fontSize;
+}
+ 
+$heading-color: #5a898f;
+$heading-font: 'Playfair Display', serif;
+
+$secHeading-color:#e75e62;
+$secHeading-font:'Oswald', sans-serif;
+$secHeading-font-weight: 400;
+
+
+h1{
+    color: $heading-color;
+    font-family: $heading-font;
+    padding-top:5%;
+    margin-left:2rem;
+}
+
+
+h2 {
+  color: $secHeading-color;
+  font-family: $secHeading-font;
+  font-weight: $secHeading-font-weight;
+  padding-top: 2rem;
+  letter-spacing: 3px;
+}
+
+h3 {
+  color: #fcfcfc;
+  padding-top:3rem;
+  font-size: 4rem;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+
+}
+
+h3,h4,h5, {
+  font-family: $secHeading-font;
+}
+
+main {
+  padding-left: 300px;
+}
+
+    @media only screen and (max-width : 992px) {
+      main {
+        padding-left: 0;
+      }
+    }
+
+  img.bbLogo{
+    width: 30%;    
+    margin-left:2rem;
+    margin-right:4rem;
+    min-width: 30rem;
+  } 
+  
+  header.App-header {
+    background-color: #5a898f;
+    position:fixed;
+    height:14rem;
+    z-index: 99;
+    top:0; 
+    width:100%;
+    display: flex;
+    align-items: center;
+ 
+  }
+
+  button.btn.loginBtn {
+    background:#e9d277;
+  }
+
+
+  section {
+    padding-top:8.8rem;;
+    padding-bottom:0;
+    background: #a3e2ea;
+  }
+
+
+
+
+
+@import './partials/Cart';
+@import './partials/FeaturedItems';
+@import './partials/Nav';
+@import './partials/ProductList';
+@import './partials/Search';
+@import './partials/DetailsPage';
+@import './partials/Footer';

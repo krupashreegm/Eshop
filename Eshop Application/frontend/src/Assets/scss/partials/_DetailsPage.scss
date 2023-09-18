@@ -1,0 +1,84 @@
+.mainBox {
+
+    display: flex;
+    justify-content: space-between;
+    margin-left: 2rem;
+}
+    @media only screen and (max-width : 992px) { 
+      .mainBox {
+        flex-direction: column;
+      }
+    }
+
+.priceBox {
+    margin: 0 5% 0 5%;
+    min-width:20rem;
+}
+img.productImg {
+   -webkit-animation: flip 1s;
+  animation: flip 1s;
+}
+
+
+@-webkit-keyframes flip {
+  from {
+    transform: rotateY(90deg)
+  }
+  to {
+    transform: rotateY(0deg)
+  }
+}
+@keyframes flip {
+  from {
+    transform: rotateY(90deg)
+  }
+  to {
+    transform: rotateY(0deg)
+  }
+}
+%message-shared {
+    padding-bottom: 2rem;
+    margin-left:2rem;
+    padding-top:2rem;
+}
+
+h2.itemTitle {
+    @extend %message-shared;
+    letter-spacing: 2px;
+}
+
+h4.othersHeader {
+    @extend %message-shared;
+}
+
+.itemDetails {
+    background: white;
+}
+
+.btn, .addBtn {
+    background: #5a898f;
+    height: 5rem;
+}
+
+.btn:hover, .btn-large:hover {
+    background: #e9d277;
+} 
+
+img.otherImgs {
+    width: 20rem;
+    padding: 2rem;
+}
+
+.changeBtn {
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 3rem;
+    cursor: pointer;
+}
+
+button.btn.changeBtn.btnChild {
+    height: 3rem;
+}
+
+
+
